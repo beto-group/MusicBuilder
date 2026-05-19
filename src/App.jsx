@@ -297,7 +297,9 @@ function DJBoothView({
       currentStepRef.current = stepIndex;
 
       if (prevStep !== stepIndex) {
-        setCurrentStep(stepIndex);
+        Tone.Draw.schedule(() => {
+          setCurrentStep(stepIndex);
+        }, time);
       }
 
       const currentTracks = tracksRef.current;
@@ -327,7 +329,10 @@ function DJBoothView({
           }
 
           if (oldSectionIndex !== progress.sectionIndex) {
-            setCurrentArrangementStep(progress.sectionIndex);
+            const nextSecIndex = progress.sectionIndex;
+            Tone.Draw.schedule(() => {
+              setCurrentArrangementStep(nextSecIndex);
+            }, time);
           }
         }
       }
