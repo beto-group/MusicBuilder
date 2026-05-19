@@ -65,7 +65,3 @@ The package exposes the following files:
 | **[METADATA.md](METADATA.md)** | Manifest YAML properties outlining compatibility, runtime parameters, and index categories. |
 | **[CONTRIBUTION.md](CONTRIBUTION.md)** | Developer compilation guidelines and coding standards. |
 | **[LICENSE.md](LICENSE.md)** | MIT permissive distribution license. |
-
-## Contributors
-
-- antigravity

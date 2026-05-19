@@ -161,4 +161,4 @@ function playNote(instrument, instrumentType, Tone, time, stepIndex) {
   }
 }
 
-export { availableInstruments, createInstrument, playNote };
+return { availableInstruments, createInstrument, playNote };

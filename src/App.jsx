@@ -1,6 +1,6 @@
 const { useState, useEffect, useRef } = dc;
 
-export function DJBoothView({
+function DJBoothView({
   dc,
   folderPath,
   Instruments,
@@ -1158,3 +1158,5 @@ export function DJBoothView({
     </div>
   );
 }
+
+return { DJBoothView };

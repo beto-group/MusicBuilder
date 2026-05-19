@@ -24,4 +24,4 @@ const css = `
   }
 `;
 
-export { css };
+return { css };

@@ -1,7 +1,6 @@
 ---
 author: beto.group
-contributor:
-  - antigravity
+contributor: []
 version: 1.0.0
 id: music-builder
 name: MUSIC BUILDER

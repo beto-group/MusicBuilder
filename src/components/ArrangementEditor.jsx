@@ -1,4 +1,4 @@
-export function ArrangementEditor({
+function ArrangementEditor({
   dc,
   arrangement,
   savedPatterns,
@@ -89,20 +89,20 @@ export function ArrangementEditor({
             <div style={{ display: "flex", gap: "3px", flexWrap: "wrap" }}>
               {savedPatterns.map((p, i) => (
                 <button
-                  key={i}
-                  onClick={() => togglePatternInSection(index, i)}
-                  disabled={!p.data}
-                  style={{
-                    padding: "3px 8px",
-                    fontSize: "0.6rem",
-                    backgroundColor: section.patternIds.includes(i) ? "rgba(78, 205, 196, 0.3)" : "rgba(100, 100, 100, 0.1)",
-                    border: section.patternIds.includes(i) ? "1px solid rgba(78, 205, 196, 0.5)" : "1px solid rgba(157, 124, 206, 0.2)",
-                    borderRadius: "3px",
-                    color: section.patternIds.includes(i) ? "#4ecdc4" : p.data ? "#9d7cce" : "#444",
-                    cursor: p.data ? "pointer" : "not-allowed",
-                    opacity: p.data ? 1 : 0.3,
-                    fontWeight: section.patternIds.includes(i) ? "bold" : "normal"
-                  }}
+                   key={i}
+                   onClick={() => togglePatternInSection(index, i)}
+                   disabled={!p.data}
+                   style={{
+                     padding: "3px 8px",
+                     fontSize: "0.6rem",
+                     backgroundColor: section.patternIds.includes(i) ? "rgba(78, 205, 196, 0.3)" : "rgba(100, 100, 100, 0.1)",
+                     border: section.patternIds.includes(i) ? "1px solid rgba(78, 205, 196, 0.5)" : "1px solid rgba(157, 124, 206, 0.2)",
+                     borderRadius: "3px",
+                     color: section.patternIds.includes(i) ? "#4ecdc4" : p.data ? "#9d7cce" : "#444",
+                     cursor: p.data ? "pointer" : "not-allowed",
+                     opacity: p.data ? 1 : 0.3,
+                     fontWeight: section.patternIds.includes(i) ? "bold" : "normal"
+                   }}
                 >
                   {String.fromCharCode(65 + i)}
                 </button>
@@ -175,3 +175,5 @@ export function ArrangementEditor({
     </div>
   );
 }
+
+return { ArrangementEditor };

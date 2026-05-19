@@ -1,4 +1,4 @@
-export function PatternBank({
+function PatternBank({
   dc,
   savedPatterns,
   justSaved,
@@ -159,3 +159,5 @@ export function PatternBank({
     </div>
   );
 }
+
+return { PatternBank };

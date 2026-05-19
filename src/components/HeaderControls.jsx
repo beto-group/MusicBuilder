@@ -1,4 +1,4 @@
-export function HeaderControls({
+function HeaderControls({
   dc,
   ready,
   isPlaying,
@@ -244,3 +244,5 @@ export function HeaderControls({
     </div>
   );
 }
+
+return { HeaderControls };

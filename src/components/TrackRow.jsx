@@ -1,4 +1,4 @@
-export function TrackRow({
+function TrackRow({
   dc,
   track,
   displayPattern,
@@ -229,3 +229,5 @@ export function TrackRow({
     </div>
   );
 }
+
+return { TrackRow };

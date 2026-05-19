@@ -1,4 +1,4 @@
-export function Playhead({ isPlaying, currentStep, trackCount }) {
+function Playhead({ isPlaying, currentStep, trackCount }) {
   if (!isPlaying || currentStep < 0 || trackCount === 0) return null;
 
   return (
@@ -31,3 +31,5 @@ export function Playhead({ isPlaying, currentStep, trackCount }) {
     </div>
   );
 }
+
+return { Playhead };
