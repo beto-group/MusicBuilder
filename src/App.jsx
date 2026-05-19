@@ -127,6 +127,19 @@ function DJBoothView({
       setIsFullTab(false);
       return;
     }
+    const styleId = `impeccable-status-music-builder`;
+    let styleEl = document.getElementById(styleId);
+    if (!styleEl) {
+      styleEl = document.createElement('style');
+      styleEl.id = styleId;
+      styleEl.innerHTML = `
+        .status-bar, .view-footer, .workspace-leaf-content-footer { 
+            display: none !important; 
+        }
+      `;
+      document.head.appendChild(styleEl);
+    }
+
     const contentWrapper = findDirectChildByClass(targetPaneContent, "view-content") || targetPaneContent;
     stateRefs.originalParent = container.parentNode;
     stateRefs.placeholder = document.createElement("div");
@@ -150,6 +163,9 @@ function DJBoothView({
       overflow: "auto"
     });
     return () => {
+      const el = document.getElementById(styleId);
+      if (el) el.remove();
+
       if (stateRefs.placeholder?.parentNode) {
         stateRefs.placeholder.parentNode.replaceChild(container, stateRefs.placeholder);
       }
@@ -376,13 +392,6 @@ function DJBoothView({
         step = step % 16;
       }
 
-      if (frameCount % 160 === 0) {
-        try {
-          if (Tone.Transport && Tone.Transport.cancel) {
-            Tone.Transport.cancel(0);
-          }
-        } catch (e) {}
-      }
 
       if (frameCount > 1600) {
         frameCount = 0;
