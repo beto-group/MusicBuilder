@@ -64,7 +64,7 @@ async function View({ folderPath, dc }) {
             dc.require(base + "/src/App.jsx")
           ]);
           setModules({
-            instruments,
+            Instruments: instruments,
             styles,
             Playhead: playhead.Playhead,
             HeaderControls: header.HeaderControls,
