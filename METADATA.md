@@ -15,7 +15,7 @@ compatibility:
   - Obsidian >=1.4.11
   - Datacore >=0.8.0
 repository:
-  - https://github.com/beto-group/MUSIC_BUILDER
+  - https://github.com/beto-group/MusicBuilder
 missing: []
 resources:
   - assets/music_builder.webp
