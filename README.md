@@ -10,7 +10,7 @@
   <!-- TOP PURPLE LINKS -->
   <a href="https://beto.group"><img src="https://img.shields.io/badge/WEBSITE-7A46F1?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtZXh0ZXJuYWwtbGluayI+PHBhdGggZD0iTTE4IDEzdjZhMiAyIDAgMCAxLTIgMkg1YTIgMiAwIDAgMS0yLTJWOGEyIDIgMCAwIDEgMi0yaDYiLz48cG9seWxpbmUgcG9pbnRzPSIxNSAzIDIxIDMgMjEgOSIvPjxsaW5lIHgxPSIxMCIgeDI9IjIxIiB5MT0iMTQiIHkyPSIzIi8+PC9zdmc+" alt="WEBSITE"></a>
   <a href="https://discord.com/invite/6rDp4q4Y2B"><img src="https://img.shields.io/badge/DISCORD-7A46F1?style=for-the-badge&logo=discord&logoColor=white" alt="JOIN OUR DISCORD"></a>
-  <a href="https://ko-fi.com/betogroup"><img src="https://img.shields.io/badge/Support-7A46F1?style=for-the-badge&logo=ko-fi&logoColor=white" alt="SUPPORT US ON KO-FI"></a>
+  <a href="https://github.com/sponsors/beto-group"><img src="https://img.shields.io/badge/Sponsor-7A46F1?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="SUPPORT US ON GITHUB"></a>
   <br/>
   <!-- BOTTOM GOLD TAXONOMY -->
   <img src="https://img.shields.io/badge/TARGET-DATACORE-000?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkUxNjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48ZWxsaXBzZSBjeD0iMTIiIGN5PSI1IiByeD0iOSIgcnk9IjMiLz48cGF0aCBkPSJNIDMgNXYxNGE5IDMgMCAwIDAgMTggMHYtMTQiLz48cGF0aCBkPSJNIDMgMTJhOSAzIDAgMCAwIDE4IDAiLz48L3N2Zz4=" alt="TARGET">
@@ -53,8 +53,8 @@ The package exposes the following files:
 | File | Description |
 | :--- | :--- |
 | **[MUSIC BUILDER.md](MUSIC%20BUILDER.md)** | The main Obsidian leaf entry point loader query. |
-| **[src/index.jsx](src/index.jsx)** | Entry bootstrapper hook that handles namespace imports and hot reloading. |
-| **[src/App.jsx](src/App.jsx)** | Main coordinator component coordinating states, transport triggers, and arrangement editors. |
+| **[_RESOURCES/DATACORE/_DONE/MUSIC BUILDER/src/index.jsx](_RESOURCES/DATACORE/_DONE/MUSIC%20BUILDER/src/index.jsx)** | Entry bootstrapper hook that handles namespace imports and hot reloading. |
+| **[_RESOURCES/DATACORE/_DONE/MUSIC BUILDER/src/App.jsx](_RESOURCES/DATACORE/_DONE/MUSIC%20BUILDER/src/App.jsx)** | Main coordinator component coordinating states, transport triggers, and arrangement editors. |
 | **[src/components/Playhead.jsx](src/components/Playhead.jsx)** | Isolated UI timeline marker step playhead. |
 | **[src/components/HeaderControls.jsx](src/components/HeaderControls.jsx)** | BPM, volume, swing, and import/export panel wrapper. |
 | **[src/components/PatternBank.jsx](src/components/PatternBank.jsx)** | Preset slot manager to save, clear, and recall multitrack pattern states. |
@@ -62,6 +62,6 @@ The package exposes the following files:
 | **[src/components/TrackRow.jsx](src/components/TrackRow.jsx)** | UI sequencer step grid, volume range knobs, and instrument selectors. |
 | **[src/core/Instruments.js](src/core/Instruments.js)** | Synthesizer definition nodes and step note playing logic powered by Tone.js. |
 | **[src/core/Styles.js](src/core/Styles.js)** | Encapsulated CSS layout tokens and visual style sheets. |
-| **[METADATA.md](METADATA.md)** | Manifest YAML properties outlining compatibility, runtime parameters, and index categories. |
-| **[CONTRIBUTION.md](CONTRIBUTION.md)** | Developer compilation guidelines and coding standards. |
-| **[LICENSE.md](LICENSE.md)** | MIT permissive distribution license. |
+| **[METADATA.md](_RESOURCES/DATACORE/_DONE/MUSIC%20BUILDER/METADATA.md)** | Manifest YAML properties outlining compatibility, runtime parameters, and index categories. |
+| **[CONTRIBUTION.md](_RESOURCES/DATACORE/_DONE/MUSIC%20BUILDER/CONTRIBUTION.md)** | Developer compilation guidelines and coding standards. |
+| **[LICENSE.md](_RESOURCES/DATACORE/_DONE/MUSIC%20BUILDER/LICENSE.md)** | MIT permissive distribution license. |
