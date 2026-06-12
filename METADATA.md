@@ -3,7 +3,7 @@ author: beto.group
 contributor: []
 version: 1.0.0
 id: music-builder
-name: MUSIC BUILDER
+name: MusicBuilder
 description: A multi-track step sequencer and arrangement editor powered by Tone.js.
 status: stable
 complexity: advanced
@@ -18,8 +18,9 @@ repository:
   - https://github.com/beto-group/MusicBuilder
 missing: []
 resources:
-  - assets/music_builder.webp
-  - assets/musicbuilder.clip.gif
+  - assets/image/preview_1.webp
+  - assets/image/preview_2.webp
+  - assets/videos/preview.gif
 type: DatacoreComponent
 target: Datacore
 security:

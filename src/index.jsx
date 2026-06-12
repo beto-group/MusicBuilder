@@ -3,6 +3,7 @@
  * Standard Datacore View Factory with Safe Agent recovery.
  */
 async function View({ folderPath, dc }) {
+  dc.currentFolderPath = folderPath;
   const Agent = {
     timer: null,
     start: (fPath, onReload) => {
